@@ -1,8 +1,8 @@
 require "dummy_rack"
-require "bees"
 require "capybara"
 require "sauce"
 require "sauce/capybara"
+require "helper"
 
 Sauce.config do |c|
   c[:start_tunnel] = false
@@ -13,7 +13,6 @@ end
 
 RSpec.configure do |config|
   config.include Capybara::DSL
-  config.include Bees
 end
 
 Capybara.app = DummyRack

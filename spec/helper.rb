@@ -1,3 +1,3 @@
-  def check_for_bees
-    oprah
-  end
+def check_for_bees
+  visit("http://google.com")
+end
